@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: myFont;
+}
+@font-face{
+    font-family: myFont;
+    src: url(fonts/AvenirLTStd-Book.otf);
+}
+body {
+    background-image: linear-gradient(rgb(26, 94, 157), rgb(109, 56, 37));
+}
+
+/* header */
+.last-sec h5{
+    font-family: myFont;
+    color: white;
+    text-align: center;
+    margin-top: 220px;
+    font-size: 7px;
+}
+.last-sec h4{
+    text-align: end;
+    font-family: myFont;
+    font-size: 9px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    font-family: myFont;
+    margin: 10px;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+.first-sec{
+    align-items: center;
+}
+.first-sec img{
+    width: 50px;
+    z-index: 1;
+    
+}
+.second-sec{
+    align-items: center;
+}
+.second-sec h6{
+    text-align: center;
+}
+.second-sec h1,h6{
+    color: white;
+    font-size: 20px;
+}
+.third-sec{
+    align-items: center;
+    
+}
+.third-sec a{
+    color: white;
+    margin: 5px;
+    font-size: 12px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    /* display: none; */
+}
+
+.second-sec a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: myFont;
+}
+/* for carousel */
+.second-sec{
+    margin-left: 120px;
+}
+span{
+    position:absolute;
+    top:60%;
+    font-size: 40px;
+    font-weight: bold;
+    color:white;
+    cursor:pointer;
+    left: 0.5%;
+    z-index:1;
+    background-color: rgba(0, 0, 0, 0.411);
+    border-radius: 100px;
+}
+span:nth-of-type(2)
+{
+    left:98%;
+    text-align: right;
+}
+section
+{
+    width: 98%;
+    display: flex;
+    justify-content: left;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+section ::-webkit-scrollbar
+{
+    visibility: hidden !important;  
+}
+section div{
+    min-width: 300px;
+    height:500px;
+    position: relative;
+    left:0;
+    text-align:center ;
+    padding-top: 30px;
+    font-weight: bold;
+    margin:10px 20px;
+    color:white;
+    transition: 0.5s;
+}
+section div img{
+    width:300px !important;
+    height:500px;
+}
+
+/* texts  -----to be fixed */
+ section div .text1
+{
+    position:relative;
+    top: -40%;
+    text-align: left;
+}
+
+section div .text1 h1
+{
+    font-size: 5em;
+    font-family: myFont;
+}
+
+section div .text1 hr{
+    width:250px;
+} 
+.hover-action{
+    position:absolute;
+    top: 140px;
+    left: -20px;
+    display: none;
+}
+
+.hover-action h1{
+    font-size: 70px;
+    font-family: myFont;
+    color: white;
+    transform: scale(1.1);
+    z-index: 1;
+    border-bottom: 3px solid white;
+   
+}
+.hover-action h3{
+    font-size: 30px;
+    font-family: myFont;
+    color: white;
+    transform: scale(1.1);
+    z-index: 1;
+    margin-top: 10px;
+}
+.hover-action button{
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: myFont;
+    width: 100px;
+    height: 30px;
+    transform: scale(1.1);
+    z-index: 1;
+    margin-top: 10px;
+}
+.hover-action p{
+    transform: scale(1.1);
+    z-index: 1;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+.hover-action p{
+    font-size: 15px;
+    font-family: myFont;
+    color: rgb(24, 24, 24);
+}
+div:hover .hover-action{
+    display: block;
+}
+div:hover .text1{
+    display: none;
+    }
+    div:hover .card-img{
+       opacity: 0.2;
+    } 
+ .cards:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+.card h1{
+    border-bottom: 3px solid white;
+}
+@media screen and (max-width: 540px) {
+    .third-secc{
+        margin-top: -65px;
+        margin-left: 320px;
+    }
+    .second-secc{
+        margin-left: 80px;
+        margin-top: 40px;
+       
+    }
+  }
+@media screen and (max-width: 414px) {
+    .third-secc{
+        margin-top: -65px;
+        margin-left: 150px;
+    }
+    .second-secc{
+        margin-left: -50px;
+        margin-top: 40px;
+    }
+  }
+@media screen and (max-width: 411px) {
+  .third-secc{
+      margin-top: -65px;
+      margin-left: 150px;
+  }
+  .second-secc{
+      margin-left: -50px;
+      margin-top: 40px;
+  }
+}
+@media screen and (max-width: 360px) {
+    .third-secc{
+        margin-top: -65px;
+        margin-left: 150px;
+    }
+    .second-secc{
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+  }
+  @media screen and (max-width: 320px) {
+   .third-secc{
+    margin-top: -25px;  
+    
+   }
+   .second-secc{
+       display: none;
+   }
+  }
+   

@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: myFont;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(fonts/AvenirLTStd-Book.otf);
+}
+
+body {
+    background-color: rgb(226, 131, 43);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-family: myFont;
+    margin: 10px;
+    padding: 15px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.first-sec {
+    align-items: center;
+}
+
+.first-sec img {
+    width: 50px;
+    z-index: 1;
+}
+
+.second-sec {
+    align-items: center;
+}
+
+.second-sec h1,
+h6 {
+    color: white;
+    font-size: 20px;
+}
+
+.second-sec h6 {
+    text-align: center;
+}
+
+.third-sec {
+    align-items: center;
+}
+
+.third-sec a {
+    color: white;
+    margin: 5px;
+    font-size: 12px;
+}
+
+.map-first-sec {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+}
+
+.map-first-sec p {
+    margin-top: 30px;
+    font-size: 12px;
+}
+.i4ewOd-pzNkMb-r4nke-LS81yb.di8rgd-TEhSn {
+    height: 24px;
+    line-height: 24px;
+    margin-top: 0;
+    display: none;
+}
+.map {
+     -webkit-filter: grayscale(50%);
+     -moz-filter: grayscale(50%);
+    -ms-filter: grayscale(50%);
+    -o-filter: grayscale(50%);
+     filter: grayscale(50%);
+     /* filter: brightness(50);   */
+     
+}
